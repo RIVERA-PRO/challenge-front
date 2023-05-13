@@ -9,7 +9,7 @@ export default function Posiciones() {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:8080/posiciones')
+        fetch('https://challenge-i4ap.onrender.com/posiciones')
             .then(response => response.json())
             .then(data => {
                 setPosiciones(data);
@@ -56,7 +56,7 @@ export default function Posiciones() {
                             <td>{posicion.partidos_perdidos}</td>
                             <td className='none'>{posicion.goles_a_favor}</td>
                             <td className='none'>{posicion.goles_en_contra}</td>
-                            <td className='none'>+{posicion.diferencia_goles}</td>
+                            <td className='none'>{posicion.diferencia_goles >= 0 ? `+${posicion.diferencia_goles}` : posicion.diferencia_goles}</td>
                             <td>{posicion.puntos}</td>
                         </tr>
                     ))}
