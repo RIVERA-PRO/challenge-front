@@ -1,0 +1,84 @@
+.equipo-champions {
+    background-color: #c0e8d5;
+}
+
+.equipo-descenso {
+    background-color: #ffc0cb;
+}
+
+  td{
+    padding: 0px 4px;
+    text-align: center;
+  }
+
+ tr, th, td {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    border-collapse: collapse;
+}
+
+table {
+   width: 70%;
+    margin-top: 100px;
+}
+.td-img {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.table-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 13%;
+    margin-top: -3%;
+    background-color: var(--blanco);
+    border-radius: 3rem;
+}
+
+@media (max-width: 900px){
+    .none{
+        display: none;
+    }
+ 
+  table{
+    width: 100%;
+  }
+
+}
+@media (max-width: 450px){
+    .none{
+        display: none;
+    }
+    tr {
+        font-size: 14px;
+    }
+    td {
+        font-size: 13px;
+    }
+    .td-img img{
+        width: 20px;
+    }
+    
+  td{
+    padding: 0px 7px;
+    text-align: center;
+  }
+  table{
+    width: 90%;
+  }
+  .table-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 13%;
+    margin-top: -10%;
+    background-color: var(--blanco);
+    border-radius: 3rem;
+}
+
+}

@@ -1,0 +1,21 @@
+.HeroPosicion{
+    background-image: url("../../../public/img/bg-hero2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    transition: all 0.25s;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title{
+    text-align: center;
+    color: var(--blanco);
+    width: 60%;
+    text-shadow: 10px 7px 10px #000;
+}
